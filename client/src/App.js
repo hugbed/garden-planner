@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import logo from "./logo.svg";
 import "./App.css";
+import carrot from "./img/carrot.jpg";
 
 class TitleSection extends Component {
   render() {
@@ -20,20 +21,57 @@ class FilterSection extends Component {
     return (
       <div className="FilterSection">
         FilterSection
-        <button>A</button>
-        <button>B</button>
-        <button>C</button>
-        <button>D</button>
+        <div className="FilterButtonsSection">
+          <button className="ButtonsGridItem">Vegetables</button>
+          <button className="ButtonsGridItem">Fruits</button>
+          <button className="ButtonsGridItem">Herbs</button>
+          <button className="ButtonsGridItem">Plants</button>
+        </div>
       </div>
     );
   }
 }
 
 class ListSection extends Component {
+  constructor(props) {
+    super(props);
+    this.plantItem = [
+      { id: 1, name: "carrot" },
+      { id: 2, name: "banana" },
+    ];
+  }
+
+  renderListItem(item) {
+    return (
+      <li>
+      <div key={item.id} className="Item">
+        <div className="ListItemImage">
+          <img className="ListItemImage" src={carrot} alt="" />
+        </div>
+        <div className="content">
+          <div>{item.name}</div>
+        </div>
+      </div>
+      </li>
+    );
+  }
+
+
   render() {
-    return <div className="ListSection">ListSection</div>;
+    return (
+      <div className="ListSection">
+        ListSection
+        <div className ="Table">
+          <ul id="horizontalList">
+            {this.plantItem.map(this.renderListItem)}
+          </ul>
+          </div>
+      </div>
+    );
   }
 }
+
+
 
 class Sidebar extends Component {
   render() {
