@@ -1,0 +1,73 @@
+.sidebar {
+  background-color: darkgrey;
+  display: grid;
+  grid-template-rows: 100px 100px 100px auto;
+}
+
+.title {
+  margin-block: 0;
+}
+
+.title-section {
+  background-color: blue;
+}
+
+.tools-section {
+  background-color: red;
+}
+
+.filter-section {
+  background-color: pink;
+}
+
+.category-list {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.category-list-item {
+  max-width: 120px;
+  margin: 2px;
+}
+
+.list-section {
+  display: flex;
+  flex-flow: column;
+  background-color: green;
+}
+
+.list-section .title {
+  flex: 0 1 auto;
+}
+
+.list-section ul {
+  flex: 1 1 auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.list-section .list-item {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.list-section .list-item img {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 30px;
+}
+
+.list-section .list-item {
+  width: 30px;
+  height: 30px;
+}
