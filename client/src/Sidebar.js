@@ -46,16 +46,17 @@ class ListSection extends Component {
     this.plantItem = [
       { id: 1, name: "carrot" },
       { id: 2, name: "banana" },
+      { id: 2, name: "banana" },
+      { id: 2, name: "banana" },
+      { id: 2, name: "banana" },
     ];
   }
 
   renderListItem(item) {
     return (
       <li key={item.id} className="list-item">
-        <div>
-          <img src={carrot} alt="" />
-          <span>{item.name}</span>
-        </div>
+        <img src={carrot} alt="" />
+        <span>{item.name}</span>
       </li>
     );
   }
@@ -64,9 +65,7 @@ class ListSection extends Component {
     return (
       <div className="list-section">
         <h3 className="title">List Section</h3>
-        <div>
-          <ul>{this.plantItem.map(this.renderListItem)}</ul>
-        </div>
+        <ul className="list">{this.plantItem.map(this.renderListItem)}</ul>
       </div>
     );
   }
