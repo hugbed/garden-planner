@@ -46,15 +46,22 @@ class ListSection extends Component {
     this.plantItem = [
       { id: 1, name: "carrot" },
       { id: 2, name: "banana" },
-      { id: 2, name: "banana" },
-      { id: 2, name: "banana" },
-      { id: 2, name: "banana" },
+      { id: 3, name: "banana" },
+      { id: 4, name: "banana" },
+      { id: 5, name: "banana" },
     ];
+    this.selectedItem = null;
+    this.handleClick = this.handleClick.bind(this);
+    this.renderListItem = this.renderListItem.bind(this);
+  }
+
+  handleClick() {
+    console.log("click");
   }
 
   renderListItem(item) {
     return (
-      <li key={item.id} className="list-item">
+      <li key={item.id} className="list-item" onClick={this.handleClick}>
         <img src={carrot} alt="" />
         <span>{item.name}</span>
       </li>
