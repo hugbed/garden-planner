@@ -1,0 +1,12 @@
+CREATE TABLE category(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(260) NOT NULL,
+	UNIQUE(name)
+);
+
+CREATE TABLE plant(
+	id SERIAL PRIMARY KEY,
+	category SERIAL REFERENCES category(id),
+	name VARCHAR(260) NOT NULL UNIQUE,
+	image VARCHAR(260) NOT NULL
+);

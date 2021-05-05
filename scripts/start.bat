@@ -1,7 +1,9 @@
 
-@echo oFF
+@echo OFF
 
-DIR=%cd%
+SET "DIR=%cd%"
+
+START docker-compose up
 
 cd "%~dp0..\client"
 START npm start

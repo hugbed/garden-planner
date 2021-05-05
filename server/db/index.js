@@ -29,9 +29,6 @@ const fetchFirstQueryRow = async (queryStr, params) => {
 module.exports = {
   query: query,
   connect: () => pool.connect(),
-  begin: (client) => client.query("BEGIN"),
-  commit: (client) => client.query("COMMIT"),
-  rollback: (client) => client.query("ROLLBACK"),
   fetchById: fetchById,
   fetchAllRows: fetchAllRows,
   fetchAllQueryRows: fetchAllQueryRows,

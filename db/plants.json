@@ -1,0 +1,61 @@
+{
+    "categories": {
+        "Herb": [
+            "Basil",
+            "Rosemary",
+            "Sage",
+            "Thyme",
+            "Parsley"
+        ],
+        "Cruciferous": [
+            "Broccoli",
+            "Brussels sprouts",
+            "Cabbage",
+            "Cauliflower"
+        ],
+        "Root": [
+            "Beetroot",
+            "Carrot",
+            "Onion",
+            "Turnip",
+            "Garlic",
+            "Shallots",
+            "Radish"
+        ],
+        "Tuber": [
+            "Potato",
+            "Sweet Potato",
+            "Taro",
+            "Ginger"
+        ],
+        "Stalk": [
+            "Celery",
+            "Fennel",
+            "Rhubarb"
+        ],
+        "Leafy": [
+            "Rocket",
+            "Leeks",
+            "Lettuce",
+            "Spinach",
+            "Kale"
+        ],
+        "Marrow": [
+            "Cucumber",
+            "Zucchini",
+            "Eggplant",
+            "Pumpkin",
+            "Squash"
+        ],
+        "Berry": [
+            "Tomato",
+            "Strawberries",
+            "Chili peppers",
+            "Capsicum"
+        ],
+        "Legumes": [
+            "Peas",
+            "Broad beans"
+        ]
+    }
+}
