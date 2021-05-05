@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env PGUSER=postgres PGPASSWORD=example PGHOST=localhost PGPORT=5432 PGDATABASE=plants nodemon index.js",
+    "populate-db": "cross-env PGUSER=postgres PGPASSWORD=example PGHOST=localhost PGPORT=5432 PGDATABASE=plants node populate-db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
